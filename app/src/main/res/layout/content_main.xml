@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="helpinghand.govinfo.Main.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/search_bar_dimen"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/darkWhite"
+            android:drawableLeft="@drawable/search_icon_grey"
+            android:drawablePadding="16dp"
+            android:fontFamily="@font/corbel"
+            android:hint="Search Here."
+            android:textColor="@color/materialGrey"
+            android:textColorHint="@color/materialGrey" />
+
+        <ImageView
+            android:id="@+id/bannerImageView"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_below="@+id/search_bar"
+            android:scaleType="fitXY"
+            android:src="@drawable/front_intro_image" />
+
+        <LinearLayout
+            android:id="@+id/categoriesLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bannerImageView"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_weight=".5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutFirst"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:background="#009688"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/corbel"
+                        android:text="LinearLayou1"
+                        android:textColor="@color/materialWhite" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/google_icon_dummy" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:background="#03A9F4"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/corbel"
+                        android:text="LinearLayou1"
+                        android:textColor="@color/materialWhite" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/google_icon_dummy" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_weight=".5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:background="#CDDC39"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/corbel"
+                        android:text="LinearLayou1"
+                        android:textColor="@color/materialWhite" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/google_icon_dummy" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:background="#FF9800"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/corbel"
+                        android:text="LinearLayou1"
+                        android:textColor="@color/materialWhite" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/google_icon_dummy" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
